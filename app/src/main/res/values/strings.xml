@@ -6,6 +6,9 @@
 
     <string name="action_settings">Settings</string>
     <string name="apikey">AIzaSyCjViNSufHN4wsUsrnVeXd3Zxij-zvJdJo</string>
+    <string name="norating">No Rating!</string>
+    <string name="noaddress">Not avaiable!</string>
+    <string name="cannotrestrivingdata">Cannot restriving data of place</string>
 
     <string-array name="place_type">
         <item>accounting</item>
@@ -24,83 +27,48 @@
         <item>bus_station</item>
         <item>cafe</item>
         <item>campground</item>
-        <item>car_dealer</item>
-        <item>car_rental</item>
-        <item>car_repair</item>
-        <item>car_wash</item>
         <item>casino</item>
         <item>cemetery</item>
         <item>church</item>
         <item>city_hall</item>
         <item>clothing_store</item>
-        <item>convenience_store</item>
         <item>courthouse</item>
         <item>dentist</item>
         <item>department_store</item>
         <item>doctor</item>
         <item>electrician</item>
-        <item>electronics_store</item>
         <item>embassy</item>
         <item>fire_station</item>
-        <item>florist</item>
-        <item>funeral_home</item>
-        <item>furniture_store</item>
         <item>gas_station</item>
-        <item>grocery_or_supermarket</item>
         <item>gym</item>
         <item>hair_care</item>
-        <item>hardware_store</item>
         <item>hindu_temple</item>
-        <item>home_goods_store</item>
         <item>hospital</item>
-        <item>insurance_agency</item>
         <item>jewelry_store</item>
-        <item>laundry</item>
         <item>lawyer</item>
         <item>library</item>
-        <item>liquor_store</item>
-        <item>local_government_office</item>
-        <item>locksmith</item>
-        <item>lodging</item>
-        <item>meal_delivery</item>
-        <item>meal_takeaway</item>
-        <item>mosque</item>
-        <item>movie_rental</item>
         <item>movie_theater</item>
-        <item>moving_company</item>
         <item>museum</item>
-        <item>night_club</item>
         <item>painter</item>
-        <item>park</item>
         <item>parking</item>
         <item>pet_store</item>
         <item>pharmacy</item>
         <item>physiotherapist</item>
-        <item>plumber</item>
         <item>police</item>
         <item>post_office</item>
-        <item>real_estate_agency</item>
         <item>restaurant</item>
-        <item>roofing_contractor</item>
-        <item>rv_park</item>
         <item>school</item>
         <item>shoe_store</item>
-        <item>shopping_mall</item>
         <item>spa</item>
         <item>stadium</item>
         <item>storage</item>
-        <item>store</item>
         <item>subway_station</item>
         <item>synagogue</item>
         <item>taxi_stand</item>
         <item>train_station</item>
-        <item>transit_station</item>
-        <item>travel_agency</item>
         <item>university</item>
-        <item>veterinary_care</item>
         <item>zoo</item>
     </string-array>
-
     <string-array name="place_type_name">
         <item>Accounting</item>
         <item>Airport</item>
@@ -118,80 +86,47 @@
         <item>Bus Station</item>
         <item>Cafe</item>
         <item>Campground</item>
-        <item>Car Dealer</item>
-        <item>Car Rental</item>
-        <item>Car Repair</item>
-        <item>Car Wash</item>
         <item>Casino</item>
         <item>Cemetery</item>
         <item>Church</item>
         <item>City Hall</item>
         <item>Clothing Store</item>
-        <item>Convenience Store</item>
         <item>Courthouse</item>
         <item>Dentist</item>
         <item>Department Store</item>
         <item>Doctor</item>
         <item>Electrician</item>
-        <item>Electronics Store</item>
         <item>Embassy</item>
         <item>Fire Station</item>
-        <item>Florist</item>
-        <item>Funeral Home</item>
-        <item>Furniture Store</item>
         <item>Gas_station</item>
-        <item>Grocery or Supermarket</item>
         <item>Gym</item>
-        <item>Gair Care</item>
-        <item>Hardware Store</item>
+        <item>Hair Care</item>
         <item>Hindu Temple</item>
-        <item>Home goods store</item>
         <item>Hospital</item>
-        <item>Insurance Agency</item>
         <item>Jewelry Store</item>
-        <item>Laundry</item>
         <item>Lawyer</item>
         <item>Library</item>
-        <item>Liquor Store</item>
-        <item>Local government office</item>
-        <item>Locksmith</item>
-        <item>Lodging</item>
-        <item>Meal Delivery</item>
-        <item>Meal Takeaway</item>
-        <item>Mosque</item>
-        <item>Movie Rental</item>
         <item>Movie Theater</item>
-        <item>Moving Company</item>
         <item>Museum</item>
-        <item>Night Club</item>
         <item>Painter</item>
-        <item>Park</item>
         <item>Parking</item>
         <item>Pet Store</item>
         <item>Pharmacy</item>
         <item>Physiotherapist</item>
-        <item>Plumber</item>
         <item>Police</item>
         <item>Post Office</item>
-        <item>Real Estate Agency</item>
         <item>Restaurant</item>
-        <item>Roofing Contractor</item>
-        <item>RV Park</item>
         <item>School</item>
         <item>Shoe Store</item>
-        <item>Shopping Mall</item>
         <item>Spa</item>
         <item>Stadium</item>
         <item>Storage</item>
-        <item>Store</item>
         <item>Subway Station</item>
         <item>Synagogue</item>
-        <item>Taxi Stand</item>
+        <item>Taxi stand</item>
         <item>Train Station</item>
-        <item>Transit Station</item>
-        <item>Travel Agency</item>
         <item>University</item>
-        <item>Veterinary Care</item>
-        <item>ZOO</item>
+        <item>Zoo</item>
     </string-array>
+
 </resources>

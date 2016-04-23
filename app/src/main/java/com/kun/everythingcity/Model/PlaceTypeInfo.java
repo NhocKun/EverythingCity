@@ -1,6 +1,5 @@
 package com.kun.everythingcity.Model;
 
-import android.graphics.Bitmap;
 import android.os.Parcel;
 import android.os.Parcelable;
 
@@ -8,19 +7,7 @@ import android.os.Parcelable;
  * Created by kunmy on 4/21/2016.
  */
 public class PlaceTypeInfo implements Parcelable {
-    private int id;
-    private String name, code;
-    private Bitmap img;
 
-    public PlaceTypeInfo() {
-    }
-
-    protected PlaceTypeInfo(Parcel in) {
-        id = in.readInt();
-        name = in.readString();
-        code = in.readString();
-        img = in.readParcelable(Bitmap.class.getClassLoader());
-    }
 
     public static final Creator<PlaceTypeInfo> CREATOR = new Creator<PlaceTypeInfo>() {
         @Override
@@ -33,6 +20,17 @@ public class PlaceTypeInfo implements Parcelable {
             return new PlaceTypeInfo[size];
         }
     };
+    private int id, img;
+    private String name, code;
+
+    public PlaceTypeInfo() {
+    }
+
+    protected PlaceTypeInfo(Parcel in) {
+        id = in.readInt();
+        name = in.readString();
+        code = in.readString();
+    }
 
     public int getId() {
         return id;
@@ -58,13 +56,14 @@ public class PlaceTypeInfo implements Parcelable {
         this.code = code;
     }
 
-    public Bitmap getImg() {
+    public int getImg() {
         return img;
     }
 
-    public void setImg(Bitmap img) {
+    public void setImg(int img) {
         this.img = img;
     }
+
 
     @Override
     public int describeContents() {
@@ -72,10 +71,10 @@ public class PlaceTypeInfo implements Parcelable {
     }
 
     @Override
-    public void writeToParcel(Parcel dest, int flags) {
-        dest.writeInt(id);
-        dest.writeString(name);
-        dest.writeString(code);
-        dest.writeParcelable(img, flags);
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeInt(id);
+        parcel.writeInt(img);
+        parcel.writeString(name);
+        parcel.writeString(code);
     }
 }

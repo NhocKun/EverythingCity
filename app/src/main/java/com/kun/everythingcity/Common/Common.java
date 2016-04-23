@@ -3,13 +3,13 @@ package com.kun.everythingcity.Common;
 import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.util.DisplayMetrics;
 import android.view.Display;
 import android.view.View;
-
-import com.kun.everythingcity.R;
 
 /**
  * Created by kunmy on 4/21/2016.
@@ -18,9 +18,6 @@ public class Common {
     public static void requestLocationPermission(final Activity activity, View view) {
         if (ActivityCompat.shouldShowRequestPermissionRationale(activity,
                 Manifest.permission.ACCESS_FINE_LOCATION)) {
-            // Provide an additional rationale to the user if the permission was not granted
-            // and the user would benefit from additional context for the use of the permission.
-            // For example if the user has previously denied the permission.
             Snackbar.make(view, "Enable Location permission",
                     Snackbar.LENGTH_INDEFINITE)
                     .setAction("OK", new View.OnClickListener() {
@@ -45,4 +42,16 @@ public class Common {
         float dpWidth = outMetrics.widthPixels / density;
         return Math.round(dpWidth / width);
     }
+
+    public static boolean isConnectedToInternet(Context context) {
+        ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo ni = cm.getActiveNetworkInfo();
+        return ni != null && ni.isConnectedOrConnecting();
+    }
+
+    public static String GetNearbyUrl(String UPLat, String UPLng, String query) {
+        return Constants.URL_API_ROOT + "nearbysearch/json?location=" + UPLat + "," + UPLng + "&rankby=distance&types=" + query
+                + "&sensor=false&key=" + Constants.SERVER_APIKEY;
+    }
+
 }

@@ -29,6 +29,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ListPlaceByTypeActivity" />
+        <activity android:name=".DetailPlaceActivity"></activity>
     </application>
 
 </manifest>

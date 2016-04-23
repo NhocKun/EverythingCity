@@ -4,9 +4,21 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 /**
- * Created by kunmy on 4/21/2016.
+ * Created by kunmy on 23,April,2016
+ * Viegrid JSC, Hanoi.
  */
 public class PlaceDetailInfo implements Parcelable {
+    public static final Creator<PlaceDetailInfo> CREATOR = new Creator<PlaceDetailInfo>() {
+        @Override
+        public PlaceDetailInfo createFromParcel(Parcel in) {
+            return new PlaceDetailInfo(in);
+        }
+
+        @Override
+        public PlaceDetailInfo[] newArray(int size) {
+            return new PlaceDetailInfo[size];
+        }
+    };
     private String name, formatted_address, formatted_phone_number, lat, lng, icon, id, open_now, rating, reference, author_name, author_url, text, website;
 
     public PlaceDetailInfo() {
@@ -28,18 +40,6 @@ public class PlaceDetailInfo implements Parcelable {
         text = in.readString();
         website = in.readString();
     }
-
-    public static final Creator<PlaceDetailInfo> CREATOR = new Creator<PlaceDetailInfo>() {
-        @Override
-        public PlaceDetailInfo createFromParcel(Parcel in) {
-            return new PlaceDetailInfo(in);
-        }
-
-        @Override
-        public PlaceDetailInfo[] newArray(int size) {
-            return new PlaceDetailInfo[size];
-        }
-    };
 
     public String getName() {
         return name;
